@@ -23,7 +23,7 @@ window.addEventListener('load', function() {
 				timeout = setTimeout(function() {
 					userInput = [];
 					bodyStyle.backgroundColor = '#f0f0f0';
-				}, 1000);
+				}, 1500);
 			}
 		}
 		else {
