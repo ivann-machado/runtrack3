@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="script.js"></script>
+
+</head>
+<body>
+<button id="button">Bouton</button>
+<p id="compteur">0</p>
+
+</body>
+</html>
