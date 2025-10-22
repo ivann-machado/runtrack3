@@ -1,9 +1,25 @@
 window.addEventListener("load", function() {
-	const keylogger = document.getElementById("keylogger");
-	document.addEventListener("keydown", function(event) {
-		const key = event.key;
-		if (key.length === 1 && key.match(/[a-zA-Z]/i)) {
-			keylogger.value += key;
+	const resultsTable = document.getElementById("results");
+	function fetchUsers(users) {
+		users.forEach((user) => {
+			const userRow = document.createElement("tr");
+			userRow.innerHTML = `<td>${user.id}</td><td>${user.nom}</td><td>${user.prenom}</td><td>${user.email}</td>`;
+			resultsTable.appendChild(userRow);
+		});
+	}
+	fetch("./users.php").then((res) => res.json()).then((data) => {
+		fetchUsers(data);
+	});
+	document.getElementById('update').addEventListener("click", function(event) {
+		console.log("clic");
+		resultsTable.innerHTML = "";
+		if (users.length === 0) {
+			resultsTable.innerHTML = "<tr>Pas de résultat</tr>";
+		}
+		else {
+			fetch("./users.php").then((res) => res.json()).then((data) => {
+				fetchUsers(data);
+			});
 		}
 	});
 });

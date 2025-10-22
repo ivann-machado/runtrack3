@@ -7,6 +7,18 @@
 	<script src="script.js"></script>
 </head>
 <body>
-<textarea id="keylogger" rows="4" cols="50"></textarea>
+	<button id="update">Update</button>
+<table border="1" id="users">
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Nom</th>
+				<th>Prenom</th>
+				<th>Email</th>
+			</tr>
+		</thead>
+		<tbody id="results">
+		</tbody>
+	</table>
 </body>
 </html>
