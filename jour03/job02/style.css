@@ -1,0 +1,57 @@
+* {
+	box-sizing: border-box;
+}
+img {
+	width: 133px;
+	height: 399px;
+	border: 1px solid black;
+}
+
+.ui-draggable-disabled {
+	border: none;
+}
+
+.ui-draggable-dragging {
+	border: none;
+}
+
+#droppable, #source-area {
+	width: 800px;
+	height: 400px;
+	margin-bottom: 20px;
+	display: flex;
+	padding: 0;
+}
+
+.drop-target, .source-slot {
+	width: 133px;
+	height: 399px;
+}
+
+#droppable {
+	border: 1px solid black;
+}
+
+.drop-target-hover {
+	background-color: #f0f8ff;
+	border: 2px dotted; #00f;
+}
+
+.slot-filled {
+	background: #eee;
+}
+
+#message-area {
+	margin: 20px 0;
+	font-size: 1.5em;
+	font-weight: bold;
+	height: 30px;
+}
+
+#message-area.win {
+	color: green;
+}
+
+#message-area.lose {
+	color: red;
+}
