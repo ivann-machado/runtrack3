@@ -1,0 +1,26 @@
+.color-blue {
+	background-color: lightblue;
+}
+.color-purple-light {
+	background-color: lightcoral;
+}
+.color-purple-dark {
+	background-color: darkviolet;
+}
+.color-orange {
+	background-color: lightsalmon;
+}
+
+.box {
+	min-height: 100px;
+	margin-bottom: 15px;
+	padding: 15px;
+}
+
+@media (min-width: 100px) {
+	.tall-row-lg {
+		min-height: 22rem;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+}

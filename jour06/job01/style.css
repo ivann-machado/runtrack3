@@ -1,0 +1,31 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #dcdcdc;
+}
+.sidebar {
+	background-color: white;
+	border: 1px solid #ccc;
+}
+.sidebar .list-group-item {
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	cursor: pointer;
+}
+.sidebar .list-group-item.active {
+	background-color: #0d6efd;
+	color: white;
+	border-color: #0d6efd;
+}
+.card-butterfly {
+	background-color: #0d6efd;
+	width: 15rem;
+}
+
+.progressButton {
+	cursor: pointer;
+}
