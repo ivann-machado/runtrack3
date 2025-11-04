@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tailwind Form</title>
+	<link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+	<header class="bg-white shadow-md">
+		<nav class="container mx-auto px-6 py-4">
+			<div class="flex space-x-6">
+				<a href="#" class="text-gray-600 hover:text-blue-600">Accueil</a>
+				<a href="#" class="text-gray-600 hover:text-blue-600">Inscription</a>
+				<a href="#" class="text-gray-600 hover:text-blue-600">Connexion</a>
+				<a href="#" class="text-gray-600 hover:text-blue-600">Rechercher</a>
+			</div>
+		</nav>
+	</header>
+
+	<main class="container mx-auto px-6 py-12">
+		<section class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+
+			<h1 class="text-3xl font-bold text-gray-900 mb-8">Inscription</h1>
+
+			<form>
+				<div class="mb-6">
+					<div class="flex">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mr-1">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
+						</svg>
+						<label class="block text-sm font-medium text-gray-700">Civilité</label>
+					</div>
+					<div class="mt-2 flex space-x-6">
+						<label for="mme" class="flex items-center">
+							<input type="radio" id="mme" name="civilité" value="mme" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+							<span class="ml-2 text-gray-700">Mme</span>
+						</label>
+						<label for="m" class="flex items-center">
+							<input type="radio" id="m" name="civilité" value="m" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+							<span class="ml-2 text-gray-700">M</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="columns-2xs mb-6sm">
+					<div class="mb-6">
+						<div class="flex">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mr-1">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+							</svg>
+							<label for="nom" class="block text-sm font-medium text-gray-700">Nom :</label>
+						</div>
+						<input type="text" name="nom" id="nom" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+					</div>
+
+					<div class="mb-6">
+						<div class="flex">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mr-1">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+							</svg>
+							<label for="prénom" class="block text-sm font-medium text-gray-700">Prénom :</label>
+						</div>
+						<input type="text" name="prénom" id="prénom" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+					</div>
+				</div>
+
+
+				<div class="mb-6">
+					<div class="flex">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mr-1">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205 3 1m1.5.5-1.5-.5M6.75 7.364V3h-3v18m3-13.636 10.5-3.819" />
+						</svg>
+						<label for="adresse" class="block text-sm font-medium text-gray-700">Adresse :</label>
+					</div>
+					<input type="text" name="adresse" id="adresse" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+				</div>
+
+				<div class="mb-6">
+					<div class="flex">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mr-1">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25" />
+						</svg>
+						<label for="email" class="block text-sm font-medium text-gray-700">Email :</label>
+					</div>
+					<input type="email" name="email" id="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+				</div>
+
+				<div class="mb-6">
+					<div class="flex">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mr-1">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25a3 3 0 0 1 3 3m3 0a6 6 0 0 1-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1 1 21.75 8.25Z" />
+						</svg>
+						<label for="password" class="block text-sm font-medium text-gray-700">Mot de passe :</label>
+					</div>
+					<input type="password" name="password" id="password" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+				</div>
+
+				<div class="mb-6">
+					<div class="flex">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mr-1">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 0 1-.657.643 48.39 48.39 0 0 1-4.163-.3c.186 1.613.293 3.25.315 4.907a.656.656 0 0 1-.658.663v0c-.355 0-.676-.186-.959-.401a1.647 1.647 0 0 0-1.003-.349c-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401v0c.31 0 .555.26.532.57a48.039 48.039 0 0 1-.642 5.056c1.518.19 3.058.309 4.616.354a.64.64 0 0 0 .657-.643v0c0-.355-.186-.676-.401-.959a1.647 1.647 0 0 1-.349-1.003c0-1.035 1.008-1.875 2.25-1.875 1.243 0 2.25.84 2.25 1.875 0 .369-.128.713-.349 1.003-.215.283-.4.604-.4.959v0c0 .333.277.599.61.58a48.1 48.1 0 0 0 5.427-.63 48.05 48.05 0 0 0 .582-4.717.532.532 0 0 0-.533-.57v0c-.355 0-.676.186-.959.401-.29.221-.634.349-1.003.349-1.035 0-1.875-1.007-1.875-2.25s.84-2.25 1.875-2.25c.37 0 .713.128 1.003.349.283.215.604.401.96.401v0a.656.656 0 0 0 .658-.663 48.422 48.422 0 0 0-.37-5.36c-1.886.342-3.81.574-5.766.689a.578.578 0 0 1-.61-.58v0Z" />
+						</svg>
+						<label class="block text-sm font-medium text-gray-700">Passions :</label>
+					</div>
+					<div class="mt-2 ml-1 space-y-2">
+						<label for="informatique" class="flex items-center">
+							<input type="checkbox" id="informatique" name="passions" value="informatique" class="h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+							<span class="ml-2 text-gray-700">Informatique</span>
+						</label>
+						<label for="voyages" class="flex items-center">
+							<input type="checkbox" id="voyages" name="passions" value="voyages" class="h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+							<span class="ml-2 text-gray-700">Voyages</span>
+						</label>
+						<label for="sport" class="flex items-center">
+							<input type="checkbox" id="sport" name="passions" value="sport" class="h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+							<span class="ml-2 text-gray-700">Sport</span>
+						</label>
+						<label for="lecture" class="flex items-center">
+							<input type="checkbox" id="lecture" name="passions" value="lecture" class="h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+							<span class="ml-2 text-gray-700">Lecture</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="mt-8 border-t pt-6">
+					<button type="submit" class="w-full px-4 py-2 bg-blue-600 text-white font-semibold rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline-flex">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+						</svg>
+
+						S'inscrire
+					</button>
+				</div>
+			</form>
+		</section>
+	</main>
+
+	<footer class="bg-gray-800 text-white mt-12">
+		<div class="container mx-auto px-6 py-8">
+			<div class="flex justify-center space-x-6">
+				<a href="#" class="text-gray-300 hover:text-white">Accueil</a>
+				<a href="#" class="text-gray-300 hover:text-white">Inscription</a>
+				<a href="#" class="text-gray-300 hover:text-white">Connexion</a>
+				<a href="#" class="text-gray-300 hover:text-white">Rechercher</a>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
