@@ -34,7 +34,7 @@ img {
 
 .drop-target-hover {
 	background-color: #f0f8ff;
-	border: 2px dotted; #00f;
+	border: 2px dotted #00f;
 }
 
 .slot-filled {
