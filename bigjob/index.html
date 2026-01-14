@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>La Plateforme – Accueil</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet" />
+	<link href="assets/css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+	<nav>
+		<div class="nav-wrapper container">
+			<a href="#" class="brand-logo">La Plateforme</a>
+		</div>
+	</nav>
+
+	<main class="container" style="margin-top: 2rem;">
+		<h4 class="center-align">Bienvenue</h4>
+		<p class="center-align">Connectez‑vous ou créez votre compte pour accéder au calendrier.</p>
+
+		<div class="row">
+			<div class="col s12">
+				<ul class="tabs">
+					<li class="tab col s6"><a class="active" href="#login">Connexion</a></li>
+					<li class="tab col s6"><a href="#register">Inscription</a></li>
+				</ul>
+			</div>
+			<div id="login" class="col s12">
+				<form id="loginForm" class="card-panel">
+					<div class="input-field">
+						<input id="loginEmail" type="email" class="validate" required />
+						<label for="loginEmail">Email</label>
+					</div>
+					<div class="input-field">
+						<input id="loginPassword" type="password" class="validate" required />
+						<label for="loginPassword">Mot de passe</label>
+					</div>
+					<button class="btn waves-effect waves-light" type="submit">Se connecter</button>
+				</form>
+			</div>
+			<div id="register" class="col s12">
+				<form id="registerForm" class="card-panel">
+					<div class="input-field">
+						<input id="registerName" type="text" class="validate" required />
+						<label for="registerName">Nom complet</label>
+					</div>
+					<div class="input-field">
+						<input id="registerEmail" type="email" class="validate" required />
+						<label for="registerEmail">Email @laplateforme.io</label>
+					</div>
+					<div class="input-field">
+						<input id="registerPassword" type="password" class="validate" required />
+						<label for="registerPassword">Mot de passe</label>
+					</div>
+					<button class="btn waves-effect waves-light" type="submit">Créer le compte</button>
+				</form>
+			</div>
+		</div>
+	</main>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="assets/js/utils.js"></script>
+	<script src="assets/js/init.js"></script>
+	<script src="assets/js/auth.js"></script>
+</body>
+
+</html>

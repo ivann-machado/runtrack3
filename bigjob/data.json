@@ -1,0 +1,81 @@
+{
+	"users": [
+		{
+			"name": "Admin User",
+			"email": "admin@laplateforme.io",
+			"password": "admin",
+			"role": "admin"
+		},
+		{
+			"name": "Moderator One",
+			"email": "mod1@laplateforme.io",
+			"password": "password",
+			"role": "moderator"
+		},
+		{
+			"name": "Moderator Two",
+			"email": "mod2@laplateforme.io",
+			"password": "password",
+			"role": "moderator"
+		},
+		{
+			"name": "Student One",
+			"email": "student1@laplateforme.io",
+			"password": "password",
+			"role": "member"
+		},
+		{
+			"name": "Student Two",
+			"email": "student2@laplateforme.io",
+			"password": "password",
+			"role": "member"
+		},
+		{
+			"name": "Student Three",
+			"email": "student3@laplateforme.io",
+			"password": "password",
+			"role": "member"
+		}
+	],
+	"requests": [
+		{
+			"userEmail": "student1@laplateforme.io",
+			"userName": "Student One",
+			"date": "2026-01-10",
+			"status": "accepted"
+		},
+		{
+			"userEmail": "student1@laplateforme.io",
+			"userName": "Student One",
+			"date": "2026-01-12",
+			"status": "rejected"
+		},
+		{
+			"userEmail": "student2@laplateforme.io",
+			"userName": "Student Two",
+			"date": "2026-01-13",
+			"status": "pending"
+		},
+		{
+			"userEmail": "student3@laplateforme.io",
+			"userName": "Student Three",
+			"date": "2026-01-14",
+			"status": "pending"
+		},
+		{
+			"userEmail": "student1@laplateforme.io",
+			"userName": "Student One",
+			"date": "2026-01-20",
+			"status": "pending"
+		}
+	],
+	"roles": {
+		"moderators": [
+			"mod1@laplateforme.io",
+			"mod2@laplateforme.io"
+		],
+		"admins": [
+			"admin@laplateforme.io"
+		]
+	}
+}
